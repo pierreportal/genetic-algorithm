@@ -13,27 +13,29 @@
     <!-- <div id="header">
         <h1>Genetic Algorithm</h1>
     </div> -->
+    <div id="main-container">
+        <div id="container">
+            <form id="parameters">
+                <div>
+                    <label for="target">Target: </label>
+                    <input type="textarea" id="target" value="Hi there.">
+                </div>
+                <div>
+                    <label for="target">Mutation rate: </label>
+                    <input type="text" id="mutation-rate" value="1e-2">
+                </div>
+                <div>
+                    <label for="target">Population size: </label>
+                    <input type="text" id="population-size" value="500">
+                </div>
+                <button type="submit" onclick="generate(event)">Generate</button>
+                <!-- <a target="_blank" href="https://github.com/pierreportal/genetic-algorithm">source code</a> -->
+            </form>
 
-    <div id="container">
-        <form id="parameters">
-            <div>
-                <label for="target">Target: </label>
-                <input type="text" id="target" value="Hi there.">
+            <div id="result-panel">
+                <h2 id="result">Result</h2>
+                <p style="font-size: .7em">Generation : <span id="generation-count">0</span></p>
             </div>
-            <div>
-                <label for="target">Mutation rate: </label>
-                <input type="text" id="mutation-rate" value=".01">
-            </div>
-            <div>
-                <label for="target">Population size: </label>
-                <input type="text" id="population-size" value="500">
-            </div>
-            <button type="submit" onclick="generate(event)">Generate</button>
-        </form>
-
-        <div id="result-panel">
-            <h2 id="result">Result</h2>
-            <p style="font-size: .7em">Generation : <span id="generation-count">0</span></p>
         </div>
     </div>
 
