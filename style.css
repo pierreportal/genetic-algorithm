@@ -90,6 +90,7 @@ body{
 }
 #result{
     font-size: 5em;
+    margin: 10px 0;
 }
 /* #header{
     margin-top: 0;
