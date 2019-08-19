@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(29, 29, 29, 1);
+    color:#fff;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#parameters{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 300px;
+    /* background-color: red; */
+    justify-content: space-between;
+    font-size: .7em;
+    text-align: right;
+}
+#parameters input{
+    background: none;
+    color: #fff;
+    border:none;
+    font-size: 1em;
+    padding: 10px;
+    border-bottom: solid .5px white;
+    text-align: center;
+}
+#parameters button{
+    border: solid 1px white;
+    background: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 140px;
+    margin: 30px auto;
+}

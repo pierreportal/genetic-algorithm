@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Genetic Algorithm</title>
+</head>
+
+<body>
+    <form id="parameters">
+        <div>
+            <label for="target">Target: </label>
+            <input type="text" id="target" value="Hello world!">
+        </div>
+        <div>
+            <label for="target">Mutation rate: </label>
+            <input type="text" id="mutation-rate" value=".01">
+        </div>
+        <div>
+            <label for="target">Population size: </label>
+            <input type="text" id="population-size" value="500">
+        </div>
+        <button type="submit" onclick="generate(event)">Generate</button>
+    </form>
+    <div>
+        <h1 id="result">Result</h1>
+        <p>Generation : <span id="generation-count">0</span></p>
+    </div>
+
+    <script src="./src/p5.min.js"></script>
+
+    <script src="./src/constants.js"></script>
+    <script src="./src/genetic.js"></script>
+    <script src="./src/population.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
