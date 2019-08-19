@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <form id="parameters">
-        <div>
-            <label for="target">Target: </label>
-            <input type="text" id="target" value="Hello world!">
-        </div>
-        <div>
-            <label for="target">Mutation rate: </label>
-            <input type="text" id="mutation-rate" value=".01">
-        </div>
-        <div>
-            <label for="target">Population size: </label>
-            <input type="text" id="population-size" value="500">
-        </div>
-        <button type="submit" onclick="generate(event)">Generate</button>
-    </form>
-    <div>
-        <h1 id="result">Result</h1>
-        <p>Generation : <span id="generation-count">0</span></p>
-    </div>
+    <div id="container">
+        <form id="parameters">
+            <div>
+                <label for="target">Target: </label>
+                <input type="text" id="target" value="Hello world! this is a long example">
+            </div>
+            <div>
+                <label for="target">Mutation rate: </label>
+                <input type="text" id="mutation-rate" value=".01">
+            </div>
+            <div>
+                <label for="target">Population size: </label>
+                <input type="text" id="population-size" value="500">
+            </div>
+            <button type="submit" onclick="generate(event)">Generate</button>
+        </form>
 
+        <div id="result-panel">
+            <h1 id="result">Result</h1>
+            <p>Generation : <span id="generation-count">0</span></p>
+        </div>
+    </div>
     <script src="./src/p5.min.js"></script>
 
     <script src="./src/constants.js"></script>

@@ -8,9 +8,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
-
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #parameters{
     display: flex;
@@ -22,14 +29,24 @@ body{
     font-size: .7em;
     text-align: right;
 }
-#parameters input{
+#parameters input {
     background: none;
-    color: #fff;
     border:none;
     font-size: 1em;
     padding: 10px;
-    border-bottom: solid .5px white;
+    border-bottom: solid .2px white;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+}
+#parameters #target{
+    color: aqua;
+}
+#parameters #mutation-rate{
+    color: rgb(247, 68, 45);
+}
+#parameters #population-size{
+    color: tomato;
 }
 #parameters button{
     border: solid 1px white;
@@ -40,4 +57,15 @@ body{
     font-size: 1em;
     width: 140px;
     margin: 30px auto;
+}
+#parameters button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: rgba(29, 29, 29, 1);
+}
+#result-panel{
+    width: 300px;
+    /* background-color: red; */
+    text-align: justify;
+    margin-left: 10px;
 }
