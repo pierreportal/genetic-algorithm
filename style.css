@@ -5,21 +5,32 @@ body{
     padding: 0;
     background-color: rgba(29, 29, 29, 1);
     color:#fff;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     
 }
 #container{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     width: 700px;
     justify-content: space-between;
     align-items: center;
 }
+/* #info{
+    display: flex;
+    color: rgba(29, 29, 29, 1);
+    flex-direction: row;
+    width:100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+} */
 
 #parameters{
     display: flex;
@@ -83,3 +94,6 @@ body{
 /* #header{
     margin-top: 0;
 } */
+#defaultCanvas0{
+    display: none;
+}
